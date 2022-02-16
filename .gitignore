@@ -19,12 +19,12 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
-.vscode
 .editorconfig
 .browserslistrc
 
 # Visual Studio Code
 .vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
