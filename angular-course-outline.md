@@ -37,10 +37,25 @@
     1.
 
 ### Angular core concepts
+    1. Modules
+    2. Components
+    3. Decorators
+    4. Services
+    5. Interceptor
+    6. ...
 
 ### Angular modules
+    1. What are Angular Modules?
+    2. Modules examples
 
 ### Angular Components
+    1. What are Angular components?
+    2. Components in action
+    3. Components nesting
+    3. Data binding
+        * String interpolation
+        * Property binding
+        * Event binding
 
 ### Angular Services
 
