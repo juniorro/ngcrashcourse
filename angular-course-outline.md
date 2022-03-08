@@ -6,6 +6,10 @@
     3. Who is this course for?
     4. What are you going to learn?
     5. Prerequisites
+       * HTML, CSS, JavaScript
+       * WWW
+       * Client / Server communication
+       * Web APIs
        * TypeScript
        * Datatypes in TypeScript
        * Type Inference
