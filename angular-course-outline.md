@@ -64,19 +64,18 @@
 
 ### Angular components
     1. What are Angular components?
-    2. Components in action
-    3. Components and template variables
-    4. Communication between components
-    5. Parent and child components
-    6. View child and view children
-    7. View encapsulation
-    8. Content projection
-    9. Content child and content children
-    10. Components lifecycle
-    11. Components Data binding
+    2. Components Data binding
         * String interpolation
         * Property binding
         * Event binding
+    3. Template variables
+    4. Components lifecycle
+    5. Communication between components
+    6. Parent and child components
+    7. View child and view children
+    8. View encapsulation
+    9. Content projection
+   10. Content child and content children
 
 ### Angular directives
     1. What are Angular directives?
