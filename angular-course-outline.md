@@ -69,13 +69,14 @@
         * Property binding
         * Event binding
     3. Template variables
-    4. Components lifecycle
-    5. Communication between components
-    6. Parent and child components
-    7. View child and view children
-    8. View encapsulation
-    9. Content projection
-   10. Content child and content children
+    4. Ng Template
+    5. Components lifecycle
+    6. Communication between components
+    7. Parent and child components
+    8. View child and view children
+    9. View encapsulation
+   10. Content projection
+   11. Content child and content children
 
 ### Angular directives
     1. What are Angular directives?
