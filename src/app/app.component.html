@@ -1,69 +1,6 @@
 <div class="container mt-4 mb-4">
   <div class="row">
     <div class="col-xs-12">
-      <h2>String interpolation, event, property, attribute, class, and style binding</h2>
-
-      <!-- https://angular.io/guide/template-syntax#event-binding-event -->
-      <!-- String interpolation -->
-      <!-- https://angular.io/guide/interpolation -->
-
-      <h4>{{ title }}</h4>
-      <h5>{{ getDescription() }}</h5>
-      <!-- <img src="{{ imageUrl }}" width="400" height="400" alt="Beach"> -->
-
-      <br>
-
-      <!-- Property binding -->
-      <!-- https://angular.io/guide/property-binding -->
-
-      <button [disabled]="isAuthenticated" class="btn btn-success btn-lg">Login</button>
-      <p [innerText]="paragrapText" [style.text-decoration]="'line-through'" [style.font-size.px]=30></p>
-      <!-- <img [src]="imageUrl" width="400" height="400" alt="Beach"> -->
-
-      <br>
-
-      <!-- Attribute, class, and style bindings -->
-      <!-- https://angular.io/guide/attribute-binding -->
-
-      <div class="progress">
-        <div id="progress" [style.width.%]=75 [style.background-color]="'green'" class="progress-bar" role="progressbar"
-          aria-valuemin="0" aria-valuemax="100">
-        </div>
-      </div>
-
-      <br>
-
-      <!-- Event binding -->
-      <!-- https://angular.io/guide/event-binding -->
-      <!-- https://www.w3schools.com/jsref/dom_obj_event.asp -->
-
-      <button type="button" class="btn btn-success" [class.hightlight]="false" (click)="onSubmit($event)">Submit</button>
-
-      <br>
-      <!-- <input type="text" (input)="name=$event.target.value"><br/> -->
-      <br>
-      <input type="text" (input)="printValue(phone)" class="form-control"><br />
-
-      <h4>{{ name }}</h4>
-
-      <br>
-
-      <input type="text" #phone placeholder="phone number" class="form-control" />
-
-      <br>
-
-      <button type="button" class="btn btn-primary" (click)="callPhone(phone.value)">Call Number</button>
-
-      <br><br>
-
-      <textarea #text name="" id="" cols="30" rows="10" (copy)="mouseOver($event)" (input)="mouseOver($event)" (mouseover)="mouseOver($event)"></textarea>
-
-      <br><br>
-
-      <input type="file" #fileInput (change)="uploadFile($event);mouseOver($event)" placeholder="photo" class="form-control" /> <br>
-      <button type="button" class="btn btn-primary" (click)="fileInput.click()">Choose File</button>
-
-      <hr>
 
       <h2>Directives</h2>
 
@@ -71,14 +8,14 @@
       <!-- https://angular.io/guide/built-in-directives -->
       <!-- Built-in directives - Attribure directive(NgClass, NgStyle, NgModel) -->
 
-      <p class="fs-4 text" [ngClass]="isVisible ? 'hightlight' : 'dark'">
+      <p class="fs-4 text" [ngClass]="isAuthenticated ? 'hightlight' : 'dark'">
         <!-- [ngClass]="'hightlight'" -->
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
         a type specimen book.
       </p>
 
-      <p class="fs-4 text" [ngStyle]="{ 'color': 'yellow', 'background-color': isVisible ? 'green': 'blue' }">
+      <p class="fs-4 text" [ngStyle]="{ 'color': 'yellow', 'background-color': isAuthenticated ? 'green': 'blue' }">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
         a type specimen book.
