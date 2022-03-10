@@ -14,7 +14,6 @@ export class AppComponent {
   name = 'Junior';
   isVisible = true;
   address = '123 Main st, Philadelphia';
-  items = ['item 1', 'item 2', 'item 3', 'item 4', 'item 5', 'item 6'];
 
   getDescription(): string {
     // logic
