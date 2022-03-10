@@ -35,4 +35,12 @@ export class AppComponent {
     console.log(phone);
   }
 
+  mouseOver(event: any): void {
+    console.log(event)
+  }
+
+  uploadFile(event: Event): void {
+    console.log(event)
+  }
+
 }
