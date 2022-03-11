@@ -2,7 +2,28 @@
   <div class="row">
     <div class="col-xs-12">
 
-      <h2>Life Cycle Hooks</h2>
+      <h2>Components Communication</h2>
+
+      <!-- https://angular.io/guide/inputs-outputs -->
+      <!-- [username]="title" -->
+      <!-- [username]="'junior'" -->
+
+      <!-- <app-user username="junior" address="123 Main St, Philadelphia" color="blue" (loginEvent)="login($event)">
+      </app-user> -->
+
+      <h5>Parent: App Component</h5>
+
+      <h5>User Value in app component: {{ userId }}</h5>
+
+      <button type="button" class="btn btn-success" (click)="onChangeUsername()">Change Username</button>
+
+      <hr>
+
+      <h5>Child: User Component</h5>
+
+      <app-user [username]="userId" address="123 Main St, Philadelphia" color="green" (loginEvent)="login($event)"
+      (nameChageEvent)="changeUsername($event)">
+      </app-user>     
 
     </div>
   </div>

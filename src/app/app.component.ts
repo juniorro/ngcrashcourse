@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,7 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   title = 'Welcome to Angular';
+  userId = 'Junior ' + 1;
   // https://angular.io/guide/lifecycle-hooks
   /* 
   ngOnInit()
@@ -38,6 +39,18 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     console.log('ngOnDestroy was called...');
   }
 
+  login(event: string): void {
+    console.log(event, 'from app component');
+  }
 
+  onChangeUsername(): void {
+    console.log('Changing title...');
+    this.userId = 'Junior ' + Math.floor(Math.random() * 100);
+  }
+
+  changeUsername(username: string): void {
+    console.log('Changing title...');
+    this.userId = username;
+  }
 
 }
