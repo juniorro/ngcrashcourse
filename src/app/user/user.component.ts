@@ -17,6 +17,10 @@ export class UserComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     console.log('ngOnChanges was called...');
     console.log(changes);
+    console.log(changes['username']);
+    if(changes['username'] && changes['username'].currentValue) {
+      //this.username = changes['username'].currentValue;
+    }
   }
 
   onLogin(): void {
