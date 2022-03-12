@@ -9,7 +9,7 @@ import { UserService } from './user.service';
 export class AppComponent implements OnInit {
   title = 'Welcome to Angular';
   users: any;
-  currentUser = { name: 'None Selected' };
+  currentUser = { id: 0, name: 'None Selected' };
 
   constructor(private userService: UserService){}
 
