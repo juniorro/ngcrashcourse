@@ -57,4 +57,7 @@ export class AppComponent implements AfterViewInit {
     this.userId = username;
   }
 
+  // Other ways of component communication include via services, via state management, 
+  // via service notification, and via the Router
+
 }
