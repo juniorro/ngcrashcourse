@@ -23,7 +23,18 @@
 
       <app-user [username]="userId" address="123 Main St, Philadelphia" color="green" (loginEvent)="login($event)"
       (nameChageEvent)="changeUsername($event)">
-      </app-user>     
+      </app-user>
+
+      <hr>
+      
+      <input type="text" #inputElement  class="form-control"> <br>
+
+      <input type="text" #inputElement2  class="form-control"> <br>
+
+      <input type="text" #inputElement  class="form-control"> <br>
+
+      <input type="text" ngModel  class="form-control ngmodel"> <br>
+      <!-- <input type="text" [(ngModel)]="userId"  class="form-control ngmodel"> <br> -->
 
     </div>
   </div>
