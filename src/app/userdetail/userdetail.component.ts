@@ -9,6 +9,8 @@ import { UserService } from '../user.service';
 })
 export class UserdetailComponent implements OnInit {
   user: any;
+  mode: 'edit' | 'locked' = 'locked';
+  buttonText = 'Edit';
 
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
@@ -17,6 +19,15 @@ export class UserdetailComponent implements OnInit {
       this.user = this.userService.getUser(+params.get('id')!);
     });
     console.log(this.user);
+  }
+
+  changeMode(mode?: 'edit' | 'locked'): void {
+      console.log(mode);
+      this.mode = this.mode === 'locked' ? 'edit' : 'locked';
+      this.buttonText = this.buttonText === 'Edit' ? 'Save' : 'Edit';
+      if(mode === 'edit') {
+          console.log('update the user');
+      }
   }
 
 }

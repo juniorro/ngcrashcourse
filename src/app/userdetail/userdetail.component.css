@@ -1,0 +1,13 @@
+/* input:disabled { */
+/*    background-color: #FFF; */
+/* } */
+
+input:disabled {
+    border: 0;
+    outline: 0;
+}
+
+input:focus {
+    outline: 0;
+    border: 0;
+}
