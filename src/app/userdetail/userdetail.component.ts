@@ -8,15 +8,15 @@ import { UserService } from '../user.service';
   styleUrls: ['./userdetail.component.css']
 })
 export class UserdetailComponent implements OnInit {
-  patient: any;
+  user: any;
 
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
-      this.patient = this.userService.getUser(+params.get('id')!);
+      this.user = this.userService.getUser(+params.get('id')!);
     });
-    console.log(this.patient);
+    console.log(this.user);
   }
 
 }

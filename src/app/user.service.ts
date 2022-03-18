@@ -11,6 +11,7 @@ export class UserService {
       "name": "Leanne Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
+      "imageUrl": "https://randomuser.me/api/portraits/women/32.jpg",
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
@@ -34,6 +35,7 @@ export class UserService {
       "name": "Ervin Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
+      "imageUrl": "https://randomuser.me/api/portraits/men/36.jpg",
       "address": {
         "street": "Victor Plains",
         "suite": "Suite 879",
@@ -57,6 +59,7 @@ export class UserService {
       "name": "Clementine Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
+      "imageUrl": "https://randomuser.me/api/portraits/women/46.jpg",
       "address": {
         "street": "Douglas Extension",
         "suite": "Suite 847",
@@ -80,6 +83,7 @@ export class UserService {
       "name": "Patricia Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
+      "imageUrl": "https://randomuser.me/api/portraits/women/27.jpg",
       "address": {
         "street": "Hoeger Mall",
         "suite": "Apt. 692",
@@ -103,6 +107,7 @@ export class UserService {
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
+      "imageUrl": "https://randomuser.me/api/portraits/women/20.jpg",
       "address": {
         "street": "Skiles Walks",
         "suite": "Suite 351",
@@ -126,6 +131,7 @@ export class UserService {
       "name": "Dennis Schulist",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
+      "imageUrl": "https://randomuser.me/api/portraits/women/61.jpg",
       "address": {
         "street": "Norberto Crossing",
         "suite": "Apt. 950",
@@ -149,6 +155,7 @@ export class UserService {
       "name": "Kurtis Weissnat",
       "username": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
+      "imageUrl": "https://randomuser.me/api/portraits/men/23.jpg",
       "address": {
         "street": "Rex Trail",
         "suite": "Suite 280",
@@ -172,6 +179,7 @@ export class UserService {
       "name": "Nicholas Runolfsdottir",
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
+      "imageUrl": "https://randomuser.me/api/portraits/men/52.jpg",
       "address": {
         "street": "Ellsworth Summit",
         "suite": "Suite 729",
@@ -195,6 +203,7 @@ export class UserService {
       "name": "Glenna Reichert",
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
+      "imageUrl": "https://randomuser.me/api/portraits/women/36.jpg",
       "address": {
         "street": "Dayna Park",
         "suite": "Suite 449",
@@ -218,6 +227,7 @@ export class UserService {
       "name": "Clementina DuBuque",
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
+      "imageUrl": "https://randomuser.me/api/portraits/women/65.jpg",
       "address": {
         "street": "Kattie Turnpike",
         "suite": "Suite 198",

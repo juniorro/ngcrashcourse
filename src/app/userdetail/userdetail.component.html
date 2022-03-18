@@ -7,7 +7,7 @@
             <div class="card mb-4 mb-xl-0">
                 <div class="card-header">Profile Picture</div>
                 <div class="card-body text-center">
-                    <img class="img-account-profile rounded-circle mb-2" height="150" width="150" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    <img class="img-account-profile rounded-circle mb-2" height="150" width="150" [src]="user.imageUrl" alt="">
                     <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
                     <button class="btn btn-primary" type="button">Upload new image</button>
                 </div>
@@ -20,40 +20,40 @@
                     <form>
                         <div class="mb-3">
                             <label class="small mb-1" for="username">Username</label>
-                            <input disabled class="form-control" id="username" type="text" placeholder="Enter your username" [value]="patient.username">
+                            <input disabled class="form-control" id="username" type="text" placeholder="Enter your username" [value]="user.username">
                         </div>
                         <div class="row gx-3 mb-3">
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputFirstName">First name</label>
-                                <input disabled class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" [value]="patient.name.split(' ')[0]">
+                                <input disabled class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" [value]="user.name.split(' ')[0]">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputLastName">Last name</label>
-                                <input disabled class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" [value]="patient.name.split(' ')[1]">
+                                <input disabled class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" [value]="user.name.split(' ')[1]">
                             </div>
                         </div>
                         <div class="row gx-3 mb-3">
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputOrgName">Organization name</label>
-                                <input disabled class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" [value]="patient.company.name">
+                                <input disabled class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" [value]="user.company.name">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputLocation">Location</label>
-                                <input disabled class="form-control" id="inputLocation" type="text" placeholder="Enter your location" [value]="patient.address.suite + ' ' + patient.address.street + ', ' + patient.address.city + ', ' + patient.address.city">
+                                <input disabled class="form-control" id="inputLocation" type="text" placeholder="Enter your location" [value]="user.address.suite + ' ' + user.address.street + ', ' + user.address.city + ', ' + user.address.city">
                             </div>
                         </div>
                         <div class="mb-3">
                             <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                            <input disabled class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" [value]="patient.email">
+                            <input disabled class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" [value]="user.email">
                         </div>
                         <div class="row gx-3 mb-3">
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputPhone">Phone number</label>
-                                <input disabled class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" [value]="patient.phone">
+                                <input disabled class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" [value]="user.phone">
                             </div>
                             <div class="col-md-6">
                                 <label class="small mb-1" for="inputBirthday">Website</label>
-                                <input disabled class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" [value]="patient.website">
+                                <input disabled class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" [value]="user.website">
                             </div>
                         </div>
                         <!-- <button class="btn btn-primary" type="button">Save changes</button> -->
