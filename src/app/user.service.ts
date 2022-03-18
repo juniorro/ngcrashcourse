@@ -9,6 +9,8 @@ export class UserService {
     {
       "id": 1,
       "name": "Leanne Graham",
+      "firstName": "Leanne",
+      "lastName": "Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
       "imageUrl": "https://randomuser.me/api/portraits/women/32.jpg",
@@ -33,6 +35,8 @@ export class UserService {
     {
       "id": 2,
       "name": "Ervin Howell",
+      "firstName": "Ervin",
+      "lastName": "Howell",
       "username": "Antonette",
       "email": "Shanna@melissa.tv",
       "imageUrl": "https://randomuser.me/api/portraits/men/36.jpg",
@@ -57,6 +61,8 @@ export class UserService {
     {
       "id": 3,
       "name": "Clementine Bauch",
+      "firstName": "Clementine",
+      "lastName": "Bauch",
       "username": "Samantha",
       "email": "Nathan@yesenia.net",
       "imageUrl": "https://randomuser.me/api/portraits/women/46.jpg",
@@ -81,6 +87,8 @@ export class UserService {
     {
       "id": 4,
       "name": "Patricia Lebsack",
+      "firstName": "Patricia",
+      "lastName": "Lebsack",
       "username": "Karianne",
       "email": "Julianne.OConner@kory.org",
       "imageUrl": "https://randomuser.me/api/portraits/women/27.jpg",
@@ -105,6 +113,8 @@ export class UserService {
     {
       "id": 5,
       "name": "Chelsey Dietrich",
+      "firstName": "Chelsey",
+      "lastName": "Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
       "imageUrl": "https://randomuser.me/api/portraits/women/20.jpg",
@@ -129,6 +139,8 @@ export class UserService {
     {
       "id": 6,
       "name": "Dennis Schulist",
+      "firstName": "Dennis",
+      "lastName": "Schulist",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
       "imageUrl": "https://randomuser.me/api/portraits/women/61.jpg",
@@ -153,6 +165,8 @@ export class UserService {
     {
       "id": 7,
       "name": "Kurtis Weissnat",
+      "firstName": "Kurtis",
+      "lastName": "Weissnat",
       "username": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
       "imageUrl": "https://randomuser.me/api/portraits/men/23.jpg",
@@ -177,6 +191,8 @@ export class UserService {
     {
       "id": 8,
       "name": "Nicholas Runolfsdottir",
+      "firstName": "Nicholas",
+      "lastName": "Runolfsdottir",
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
       "imageUrl": "https://randomuser.me/api/portraits/men/52.jpg",
@@ -201,6 +217,8 @@ export class UserService {
     {
       "id": 9,
       "name": "Glenna Reichert",
+      "firstName": "Glenna",
+      "lastName": "Reichert",
       "username": "Delphine",
       "email": "Chaim_McDermott@dana.io",
       "imageUrl": "https://randomuser.me/api/portraits/women/36.jpg",
@@ -225,6 +243,8 @@ export class UserService {
     {
       "id": 10,
       "name": "Clementina DuBuque",
+      "firstName": "Clementina",
+      "lastName": "DuBuque",
       "username": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
       "imageUrl": "https://randomuser.me/api/portraits/women/65.jpg",
