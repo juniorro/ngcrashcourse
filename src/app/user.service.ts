@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -124,7 +123,7 @@ export class UserService {
     },
     {
       "id": 6,
-      "name": "Mrs. Dennis Schulist",
+      "name": "Dennis Schulist",
       "username": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
       "address": {
@@ -170,7 +169,7 @@ export class UserService {
     },
     {
       "id": 8,
-      "name": "Nicholas Runolfsdottir V",
+      "name": "Nicholas Runolfsdottir",
       "username": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
       "address": {

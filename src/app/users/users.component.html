@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Current User</h5>
+      <p class="card-text">ID: {{ currentUser.id }}</p>
+      <p class="card-text">Name: {{ currentUser.name }}</p>
+    </div>
+  </div>
+
+  <br>
+
+  <table class="table table-striped">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <th scope="row">{{ user.id }}</th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address.street }}, {{ user.address.city }}</td>
+        <td>{{ user.phone }}</td>
+        <td>
+          <!-- <button (click)="onViewUser(user.id)" type="button" class="btn btn-primary">View</button> -->
+          <button [routerLink]="['/user', user.id]" type="button" class="btn btn-primary">View</button>
+       </td>
+      </tr>
+    </tbody>
+  </table>
