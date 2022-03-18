@@ -5,6 +5,7 @@
 input:disabled {
     border: 0;
     outline: 0;
+    background: #F4F6F7;
 }
 
 input:focus {
