@@ -11,6 +11,10 @@ export class UserdetailComponent implements OnInit {
   user: any;
   mode: 'edit' | 'locked' = 'locked';
   buttonText = 'Edit';
+  canDeactivate(): boolean {
+      this.buttonText === 'Save' ? confirm('You can leave before saving changes'): null;
+      return this.buttonText === 'Edit';
+      }
 
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
