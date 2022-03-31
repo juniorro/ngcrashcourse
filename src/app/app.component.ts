@@ -23,9 +23,7 @@ export class AppComponent {
           this.isLoading = true;
       }
       if(event instanceof NavigationEnd || event instanceof NavigationCancel || event instanceof NavigationError) {
-          setTimeout(() => {
           this.isLoading = false;
-          }, 6 * 1000)
       }
   }
 }
