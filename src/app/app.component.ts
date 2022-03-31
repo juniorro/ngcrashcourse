@@ -15,6 +15,7 @@ export class AppComponent {
   constructor(private router: Router) {
       router.events.subscribe((event: Event) => {
           console.log(event);
+          this.setLoadingIndicator(event);
       });
   }
 
