@@ -14,7 +14,18 @@ export class UsersComponent implements OnInit {
   constructor(private userService: UserService, private router: Router){}
 
   ngOnInit(): void {
-    this.users = this.userService.getUsers();
+    this.userService.getUsers().subscribe(
+        (users: any[]) => {
+            console.log(users);
+            this.users = users;
+        },
+        (error: any) => {
+           console.log(error);
+        },
+        () => {
+           console.log('Finished retrieving data');
+        }
+    );
   }
 
   onViewUser(id: string): void {

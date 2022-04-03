@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -267,15 +269,36 @@ export class UserService {
       }
     }
   ];
+  private readonly apiUrl = 'https://jsonplaceholder.typicode.com';
+  private readonly imageApi = 'https://randomuser.me/api/portraits';
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): any[] {
-    return this.users;
+  getUsers(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/users`).pipe(
+        map(users => users.map(user => ({
+            ...user,
+            firstName: user.name.split(' ')[0],
+            lastName: user.name.split(' ')[1],
+            imageUrl: `${this.imageApi}/${Math.random() > 0.5 ? 'men' : 'women'}/${Math.floor(Math.random() * 100) + 1}.jpg`
+        })))
+    );
   }
 
+  // getUsers(): Observable<any[]> {
+  //   return this.http.get<any[]>(`${this.apiUrl}/users`);
+  // }
+
   getUser(id: number): any {
-    return this.users.find(user => user.id === id);
+    return this.http.get<any>(`${this.apiUrl}/users/${id}`).pipe(
+        map(user => ({
+            ...user,
+            firstName: user.name.split(' ')[0],
+            lastName: user.name.split(' ')[1],
+            imageUrl: `${this.imageApi}/${Math.random() > 0.5 ? 'men' : 'women'}/${Math.floor(Math.random() * 100) + 1}.jpg`
+        })
+    ));
+
   }
 
 }

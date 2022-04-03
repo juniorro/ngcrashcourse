@@ -11,19 +11,28 @@ export class UserdetailComponent implements OnInit {
   user: any;
   mode: 'edit' | 'locked' = 'locked';
   buttonText = 'Edit';
-  canDeactivate(): boolean {
-      this.buttonText === 'Save' ? confirm('You can leave before saving changes'): null;
-      return this.buttonText === 'Edit';
-      }
 
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
-      this.user = this.userService.getUser(+params.get('id')!);
-    });
-    console.log(this.user);
+      this.user = this.activatedRoute.snapshot.data['resolvedUser'];
+    // this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
+    //   this.userService.getUser(+params.get('id')!).subscribe(
+    //       (user: any) => {
+    //           this.user = user;
+    //           console.log(this.user);
+    //       },
+    //       (error: any) => {
+    //           console.log(error);
+    //       }
+    //   );
+    // });
   }
+
+  canDeactivate(): boolean {
+      this.buttonText === 'Save' ? confirm('You can\'t leave before saving changes'): null;
+      return this.buttonText === 'Edit';
+   }
 
   changeMode(mode?: 'edit' | 'locked'): void {
       console.log(mode);
