@@ -11,16 +11,16 @@
        * Client / Server communication
        * Web APIs
        * TypeScript
-       * Datatypes in TypeScript
-       * Type Inference
-       * Type Assertion
-       * Var vs let vs const
-       * Functions
-       * Interfaces
-       * Classes
-       * Generics
-       * Modules
-       * ...
+           * Datatypes in TypeScript
+           * Type Inference
+           * Type Assertion
+           * Var vs let vs const
+           * Functions
+           * Interfaces
+           * Classes
+           * Generics
+           * Modules
+           * ...
 
 ### Setup
     1. Software requirements
